@@ -69,10 +69,46 @@
 
 <dir style="margin-left:-185px"align="center"font color="black"><i><h1>आतुरता लग्नाची</h1></i></font>
 </dir>
+<div class="launch-time">
+<div>
+  <p id="Days">00</p>
+  <span>Days</span>
+</div>
+
+<div>
+  <p id="hours">00</p>
+  <span>Hours</span>
+</div>
+
+<div>
+  <p id="minutes">00</p>
+  <span>Minutes</span>
+</div>
+
+<div>
+  <p id="seconds">00</p>
+  <span>seconds</span>
+
+</div>
+</div>
+
+<script>
+var countDownDate = new Date("Oct 16, 2021 00:00:00").getTime();
+var x = setInterval(function(){
+var now = new Date().getTime();
+var distance = countDownDate now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 60 60));
+var minutes = Math.floor((distance % (1000*60*60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML =hours ;
+document.getElementById("minutes").innerHTML =minutes ;
+document.getElementById("seconds").innerHTML =seconds ;
+}, 1000);
+</script>
 
 
-<dir style="margin-left:-50px" align="center"><h3>DATE: 05  DEC 2023</h3></dir>
-<dir style="margin-left:-120px" align="center"> <h3>TIME: 2:25 </h3><br></dir>
 <h1>    </h1><br>
 <h1>    </h1><br>
 
